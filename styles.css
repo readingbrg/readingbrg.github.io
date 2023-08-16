@@ -1,0 +1,453 @@
+body, html{
+    margin:0;
+    padding:0;
+    height: 100%;
+    font-family: Garamond, sans-serif;
+}
+
+.background-image {
+    background: url('flowers.jpg') center center no-repeat;
+    position:fixed;
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.index-container {
+    overflow: scroll;
+    display: flex;
+    padding: 2rem 0 5rem;
+    gap: 2rem;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.container {
+    overflow: hidden;
+    display: block;
+}
+.central-container {
+    margin: auto;
+    max-width: 850px;
+}
+
+.central-container-wide {
+    margin: auto;
+    max-width: 1240px;
+    min-width: 80%;
+}
+.page-body {
+    background-color: white;
+    gap: 1em;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.page-text {
+    margin: 0 auto;
+    max-width: 850px;
+}
+.page-text > p {
+    margin-top: 0;
+    text-indent: 2rem;
+}
+.page--title {
+    margin-top: 0;
+}
+p {
+    white-space: pre-wrap;
+    margin-top: 32px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align:center;
+    font-size: 1.75rem;
+    margin: 2rem 0;
+}
+.title-box {
+    background-image: url('./sky_aflame.JPG');
+    background-position: center center;
+    background-size: cover;
+    display:flex;
+    justify-content:center;
+    color: white;
+    margin-top: 2em;
+}
+.title-shader {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    margin: 0;
+    padding: 3rem;
+}
+.book__text-container--bannerless {
+    border-radius: 0;
+}
+.title--extras {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.cb-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: stretch;
+    padding: 0;
+}
+.cb {
+    background-blend-mode: darken;
+    background-position: center center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    flex-grow: 1;
+    font-weight:bold;
+    padding: 0rem 0;
+    text-decoration: none;
+    transition-duration: .3s;
+    width: 100%;
+}
+.cb-no-shade {
+    background-color: rgba(0,0,0,0);
+}
+.cb-no-shade {
+    filter: brightness(120%);
+}
+.cb:hover {
+    scale: 1.05;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    z-index: 50;
+}
+
+.cb > span {
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 2rem;
+    height: 100%;
+    padding: 2rem 0;
+    text-align:center;
+    transition-duration: .2s;
+    width: 100%;
+}
+.cb:hover > span {
+    background-color: transparent;
+    color: transparent;
+}
+.cb--persist:hover span {
+    color: unset;
+}
+
+.vertical-position-35 {
+    background-position-y: 35%;
+}
+.vertical-position-40 {
+    background-position-y: 40%;
+}
+.vertical-position-65 {
+    background-position-y: 65%;
+}
+.cb-jun {
+    background-image: url('./June40.jpg');
+    background-position-y: 75%;;
+}
+.cb-jun.cb-footer-button {
+    background-position-y: 75%;
+}
+.cb-jul {
+    background-image: url('./July40.jpg');
+    background-position-y: 70%;
+}
+.cb-jul.cb-footer-button {
+    background-position-y: 70%;
+}
+.cb-aug {
+    background-image: url('./August40.jpg');
+    background-position-y: 60%;
+}
+.cb-aug.cb-footer-button {
+    background-position-y: 60%;
+}
+.cb-home, .cb-home:hover {
+    background-color: navy;
+}
+.cb-home:hover > span {
+    color: white;
+}
+
+.colors {
+    background-color: navy ;
+    background-color: red;
+    background-color: green;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+    border-bottom: solid 3px #071335;
+    margin: 0 0rem 2rem;
+}
+.testimonial--body {
+    color: #071335;
+    font-style: italic;
+    text-indent: 2rem;
+}
+.testimonial--source {
+    border-right: solid 3px #071335;
+    box-sizing: border-box;
+    color: #071335;
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-right: .5rem;
+    text-align:right;
+    width: 100%;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+.button {
+    background-color: peachpuff;
+    border-radius: 10px;
+    color: #071335;
+    display: block;
+    font-size: 1.75rem;
+    font-weight:bold;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align:center;
+    text-decoration: none;
+    transition-duration: .3s;
+    border:none;
+    box-sizing: border-box;
+    flex: 1 1 40%;
+    width: 100%;
+}
+.button:hover { 
+    scale: 1.05;
+    cursor: pointer;
+    z-index: 50;
+}
+.button__large {
+    width: 89%;
+}
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: stretch;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+}
+
+.divider {
+    border-bottom: 5px solid #7F462C;
+    margin-top: 2rem;
+}
+
+.book__text-container {
+    background-color: white;
+    margin-top: 2rem;
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+.book__text-container p:first-of-type {
+    margin-top: 0;
+}
+.book__text-container > p {
+    margin-top: 1rem;
+}
+
+.book__image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.book__image--small {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+}
+.book__image--medium {
+    display: block;
+    margin: 2rem auto;
+    max-width: 100%;
+}
+.book__divider {
+    text-align:center;
+    width: 100%;
+    display: block;
+    margin: 2rem 0;
+}
+.book__brg-tag {
+    color: #9900ff;
+    margin-bottom: 2rem;
+    display: block;
+}
+.book__scripture {
+    font-weight: bold;
+    display: block;
+    margin-left: 4rem;
+}
+.cb-footer {
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+}
+.cb--extras {
+    flex-wrap: wrap;
+    padding: 0;
+}
+.cb-group-reverse {
+    flex-direction: row-reverse;
+}
+.cb-footer-button {
+    flex: 1 1 100%;
+    display: block;
+    width: 100%;
+}
+.cb-footer-button--full {
+    flex: 0 0 100%;
+}
+.cb-footer > .cb-footer-button > span {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+@media screen and (min-width: 36rem) {
+    .cb-footer-button {
+        flex: 1 1 49%;
+    }
+    .testimonial {
+        margin: 0 3rem 2rem;
+    }
+    .button {
+        min-width: 326px;
+    }
+    .button-group { 
+        flex-direction: row;
+    }
+}
+.index-container {
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+.cover-image {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.side-container {
+    flex: 0 0 50%;
+    max-width: 100%;
+    
+}
+
+@media screen and (min-width: 44rem) {
+    .cover-image { 
+        max-height: 600px;
+        width: auto;
+        max-width:550px;
+        margin: 0 2rem;
+    }
+    .cb-group { 
+        flex-direction: row;
+    }
+    .cb-jun {
+        background-position-y: 50%;
+    }
+    .cb > span {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .cb {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 54rem) {
+    .title-box, .title-shader {
+        border-radius: 20px 20px 0 0;
+    }
+    .title-shader {
+        padding: 5rem;
+    }
+    .book__text-container {
+        border-radius: 0 0 20px 20px;
+        margin-bottom: 2rem;
+        padding: 3rem;
+    }
+    .book__text-container--bannerless {
+        border-radius: 20px;
+    }
+    .book__image--small {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .book__image--medium {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+    .cb-group {
+        padding: 0;
+    }
+    .cb-footer {
+        margin-bottom: 2rem;
+    }
+    .cb--extras {
+        padding: 0 2rem;
+    }
+    .side-container {
+    }
+
+    .cb {
+        width: 25%;
+    }
+    .page-body {
+        padding-bottom: 5rem;
+    }
+}
+@media screen and (min-width: 70rem) {
+    .index-container {
+        flex-direction: row;
+        align-items: start;
+    
+    }
+    .cover-image {
+        height: auto;
+        flex: 1 1 25%;
+        width: 100%;
+        margin: 0;
+    }
+    .side-container {
+        flex: 1 0 50%;
+        min-width: 650px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 100rem) {
+    .cover-image { 
+        width: auto;
+        height: 100%;
+        max-height: 936px;
+        flex: 0 1 25%;
+        max-width: initial;
+    }
+    .side-container {
+        align-self: start;
+        flex: 1 1 50%;
+        max-width: 100%;
+    }
+}
