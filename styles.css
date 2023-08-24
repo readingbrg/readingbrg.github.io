@@ -1,8 +1,8 @@
-body, html{
+body, html {
     margin:0;
     padding:0;
     height: 100%;
-    font-family: Garamond, sans-serif;
+    font-family: Tahoma, sans-serif;
 }
 
 .background-image {
@@ -242,6 +242,7 @@ h2 {
     flex: 1 1 40%;
     width: 100%;
 }
+
 .button:hover { 
     scale: 1.05;
     cursor: pointer;
@@ -307,7 +308,7 @@ h2 {
 .book__scripture {
     font-weight: bold;
     display: block;
-    margin-left: 4rem;
+    margin: 0 4rem;
 }
 .cb-footer {
     margin-bottom: 5rem;
@@ -316,6 +317,12 @@ h2 {
 .cb--extras {
     flex-wrap: wrap;
     padding: 0;
+}
+.cb--rounded {
+    border-radius: 10px;
+}
+.cb--rounded > span {
+    border-radius: 10px;
 }
 .cb-group-reverse {
     flex-direction: row-reverse;
@@ -393,6 +400,12 @@ h2 {
         margin: 0 3rem 2rem;
     }
 }
+@media screen and (min-width: 45.75rem) {
+    .button:last-child:nth-child(3) {
+        flex-basis: 50%;
+        flex-grow: 0;
+    }
+}
 @media screen and (min-width: 54rem) {
     .title-box, .title-shader {
         border-radius: 20px 20px 0 0;
@@ -457,6 +470,16 @@ h2 {
         flex: 1 0 50%;
         min-width: 650px;
         width: 100%;
+    }
+    .button:last-child:nth-child(3) {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+}
+@media screen and (min-width: 78.75rem) {
+    .button:last-child:nth-child(3) {
+        flex-basis: 50%;
+        flex-grow: 0;
     }
 }
 
