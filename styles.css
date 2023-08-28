@@ -464,7 +464,6 @@ h2 {
         margin: 0;
         padding: 0;
         max-height: initial;
-        max-width: initial;
     }
     .side-container {
         flex: 1 0 50%;
