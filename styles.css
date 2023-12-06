@@ -26,7 +26,7 @@ body, html {
     }
 }
 .index-container {
-    overflow: scroll;
+    overflow-y: scroll;
     display: flex;
     padding: 2rem 0 5rem;
     gap: 2rem;
@@ -464,7 +464,6 @@ h2 {
         margin: 0;
         padding: 0;
         max-height: initial;
-        max-width: initial;
     }
     .side-container {
         flex: 1 0 50%;
