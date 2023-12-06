@@ -26,7 +26,7 @@ body, html {
     }
 }
 .index-container {
-    overflow: scroll;
+    overflow-y: scroll;
     display: flex;
     padding: 2rem 0 5rem;
     gap: 2rem;
